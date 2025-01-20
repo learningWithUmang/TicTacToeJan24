@@ -1,0 +1,11 @@
+package models;
+
+public enum BotDifficultyLevel {
+    EASY,
+    MEDIUM,
+    HARD
+}
+/*
+BOT IS GOING TO HAVE A FAMILY OF ALGOS DEPENDENING UPON DIFFUCULTY LEVEL,
+IT WILL MAKE MOVE DIFFERENTLY
+ */
