@@ -1,6 +1,7 @@
 package controllers;
 
 import exceptions.InvalidBotCountException;
+import exceptions.InvalidMoveException;
 import exceptions.InvalidPlayerCountException;
 import models.Game;
 import models.GameState;
@@ -22,7 +23,7 @@ public class GameController {
                 .build();
     }
 
-    public void makeMove(Game game){
+    public void makeMove(Game game) throws InvalidMoveException {
         game.makeMove();
     }
 
@@ -39,7 +40,7 @@ public class GameController {
     }
 
     public void unDo(Game game){
-        //
+        game.undo();
     }
 
 

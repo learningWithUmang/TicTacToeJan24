@@ -12,6 +12,12 @@ public class Bot extends Player{
         this.botDifficultyLevel = botDifficultyLevel;
         this.botPlayingStrategy = BotPlayingStrategyFactory.getBotPlayingStrategy(botDifficultyLevel);
     }
+
+    @Override
+    public Move makeMove(Board board){
+        Move move = botPlayingStrategy.makeMove(board);
+        return move;
+    }
 }
 
 /*
